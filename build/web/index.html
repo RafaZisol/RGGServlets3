@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+        <link rel="stylesheet" href="./Estilo.css">
+    <body>
+        <h1>Registrar Cliente</h1>
+        <form action="SvCliente" method="post">
+            <label >Nombre: </label>
+            <input type="text" name="nombre">
+            <br>
+            <label >Telefono: </label>
+            <input type="number" name="telefono">
+            <br>
+            <label >Correo: </label>
+            <input type="email" name="correo">
+            <br>
+            <input type="submit" value="registrar">
+         </form>
+
+        <form action="SvProducto" method="post"> 
+            <h1>Registrar producto</h1>
+            <label >Nombre del producto: </label>
+            <input type="text" name="nombre">
+            <br>
+            <label >Precio del producto: </label>
+            <input type="text" name="precio">
+            <br>
+            <label >Numero de piezas: </label>
+            <input type="text" name="existencia">
+            <br>
+            <label >Cliente que vende: </label>
+            <input type="text" name="cliente">
+            <br>
+            <input type="submit" name="Registar">
+        </form>
+
+        <form action="SvCompra2" method="post">
+           <h1>Comprar producto</h1>
+           <label >Nombre del producto: </label>
+           <input type="text" name="nombre">
+           <br>
+           <label >Precio exhibido: </label>
+           <input type="text" name="precio">
+           <br>
+           <label>Unidades a comprar: </label>
+           <input type="text" name="unidades">
+           <br>
+           <label>Vendedor: </label>
+           <input type="text" name="cliente">
+           <br>
+           <input type="submit" name="Comprar">
+        </form>
+
+        
+    </body>
+</html>

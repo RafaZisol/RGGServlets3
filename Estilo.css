@@ -1,0 +1,75 @@
+/* Paleta de colores */
+:root {
+  --color-primario: #b4d9d1;
+  --color-secundario: #ffe4d4;
+  --color-terciario: #e3d4c9;
+  --color-fondo: #f7f7f7;
+  --color-texto: #333333;
+}
+
+/* Fuente */
+body,
+input,
+select,
+textarea,
+button {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--color-texto);
+}
+
+/* Cuerpo de la página */
+body {
+  background-color: var(--color-fondo);
+  margin: 0;
+  padding: 0;
+}
+
+/* Formularios */
+form {
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid var(--color-secundario);
+  border-radius: 5px;
+  background-color: var(--color-terciario);
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='password'],
+input[type='number'],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--color-primario);
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: none;
+}
+
+input[type='submit'] {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--color-primario);
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+input[type='submit']:hover {
+  background-color: var(--color-secundario);
+}
